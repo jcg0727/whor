@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Main.css';
 
 const Main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="main">
       {/* Hero Section */}
@@ -97,7 +101,7 @@ const Main = () => {
           <p className="cta-description">
             첫 번째 질문 카드로 의미 있는 대화를 시작해보세요
           </p>
-          <button className="cta-button">무료로 시작하기</button>
+          <button className="cta-button">후알카드 체험하기</button>
         </div>
       </section>
     </main>
